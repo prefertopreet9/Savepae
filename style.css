@@ -1,17 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-li, a{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-links{
+li,
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    /* font-size: 17px; */
+}
+
+.nav-links {
     list-style: none;
 }
-.nav-links li{
+
+.nav-links li {
     display: inline-block;
 }
-.scan-qr{
-    width: 10%;
+
+.scan-qr {
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        background-color: #1A1A40;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+    }
+
+    .fa-bell {
+        font-size: 1.8rem;
+    }
+
+    .qr-scanning {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .qr-scanning h3 {
+        margin-left: 1rem;
+    }
+
+    .qr-scanning img {
+        margin-right: 1rem;
+    }
+
+    nav li a {
+        text-decoration: none;
+    }
+
+    nav {
+        padding: .5rem;
+    }
+
+    nav ul li:nth-child(1) {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    nav ul li:nth-child(1) i {
+        padding-right: .5rem;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        color: aliceblue;
+
+    }
+
+    .savepae {
+        color: aliceblue;
+        font-size: 2rem;
+    }
+
+    .notification,
+    .scan-qr {
+        cursor: pointer;
+
+    }
+
+    .payments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem auto;
+
+    }
+
+    .payments h2 {
+        background-color: #CCF3EE;
+        font-size: 2rem;
+        color: #1A1A40;
+        padding: .8% 8%;
+        border: .1rem solid #1A1A40;
+        border-radius: .5rem;
+    }
+
+    .payments ul {
+        padding-top: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .payments ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .payments ul li i {
+        border-radius: 50%;
+        background-color: #CCF3EE;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        cursor: pointer;
+    }
+
+    .recharges {
+        padding-bottom: 1rem;
+    }
+
+    .recharges h2 {
+        background-color: #CCF3EE;
+        font-size: 2rem;
+        width: 80%;
+        color: #1A1A40;
+        padding: .5% 2%;
+        border: .1rem solid #1A1A40;
+        border-radius: .5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .recharges ul {
+        padding-top: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .recharges ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recharges ul li i {
+        border-radius: 50%;
+        background-color: #CCF3EE;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        cursor: pointer;
+    }
+
+    .rewards {
+        background-color: #CCF3EE;
+    }
+
+    .rewards h2 {
+        color: #1A1A40;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .footer p {
+        margin: 1rem auto;
+        text-align: center;
+    }
 }
